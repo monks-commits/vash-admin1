@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформлення замовлення</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>Театральні квитки</h1>
+                <p class="tagline">Офіційний продаж театральних квитків. Без комісій, по ціні каси театру.</p>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Головна</a>
+            <a href="afisha.html" class="nav-link">Афіша</a>
+            <a href="theatres.html" class="nav-link">Театри</a>
+            <a href="about.html" class="nav-link">Про нас</a>
+            <a href="contacts.html" class="nav-link">Контакти</a>
+        </nav>
+        <div class="social-links">
+            <a href="https://monks-commits.github.io/music-dnepr/" class="social-link" target="_blank">Музичний Дніпро</a>
+            <a href="https://monks-commits.github.io/rock-cafe/" class="social-link" target="_blank">Рок Кафе</a>
+            <a href="https://www.facebook.com/eventsandticketsdnepr/" class="social-link" target="_blank">ФБ</a>
+            <a href="https://t.me/zahodiikvitki" class="social-link" target="_blank">Телеграм</a>
+            <a href="#" class="social-link">Інстаграм</a>
+            <a href="#" class="social-link">Тік Ток</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="section">
+            <h2>Оформлення замовлення</h2>
+            
+            <div class="checkout-content">
+                <div class="order-summary">
+                    <h3>Ваше замовлення</h3>
+                    <div class="order-details">
+                        <div class="order-item">
+                            <h4>За двома зайцями</h4>
+                            <p>Театр ім. Т.Г. Шевченка, Кривий Ріг</p>
+                            <p>Дата: 15 грудня 2024, 19:00</p>
+                            <div class="selected-seats">
+                                <p>Вибрані місця:</p>
+                                <ul id="selected-seats-list">
+                                    <li>Ряд 5, Місце 12 - 150 грн</li>
+                                    <li>Ряд 5, Місце 13 - 150 грн</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="order-total">
+                            <div class="total-line">
+                                <span>Кількість квитків:</span>
+                                <span id="tickets-count">2</span>
+                            </div>
+                            <div class="total-line">
+                                <span>Загальна сума:</span>
+                                <span id="total-amount">300 грн</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="checkout-form">
+                    <h3>Контактна інформація</h3>
+                    <form id="checkout-form">
+                        <div class="form-group">
+                            <label for="fullname">ПІБ *</label>
+                            <input type="text" id="fullname" name="fullname" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Телефон *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="comments">Коментарі (необов'язково)</label>
+                            <textarea id="comments" name="comments" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="payment-section">
+                            <h4>Оплата</h4>
+                            <p class="payment-info">Оплата без комісії через захищений шлюз LiqPay</p>
+                            
+                            <div class="payment-methods">
+                                <div class="payment-method">
+                                    <input type="radio" id="card" name="payment" value="card" checked>
+                                    <label for="card">Банківська картка</label>
+                                </div>
+                                <div class="payment-method">
+                                    <input type="radio" id="google-pay" name="payment" value="google-pay">
+                                    <label for="google-pay">Google Pay</label>
+                                </div>
+                                <div class="payment-method">
+                                    <input type="radio" id="apple-pay" name="payment" value="apple-pay">
+                                    <label for="apple-pay">Apple Pay</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary btn-large">Оплатити</button>
+                            <a href="halls/shevchenko_map.html" class="btn btn-secondary">Назад до вибору місць</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Проекти</h4>
+                <a href="https://monks-commits.github.io/music-dnepr/" target="_blank">Музичний Дніпро</a>
+                <a href="https://monks-commits.github.io/rock-cafe/" target="_blank">Рок Кафе</a>
+            </div>
+            <div class="footer-section">
+                <h4>Контакти</h4>
+                <a href="contacts.html">Зв'язатися з нами</a>
+                <a href="about.html">Про проект</a>
+            </div>
+            <div class="footer-section">
+                <h4>Соціальні мережі</h4>
+                <a href="https://www.facebook.com/eventsandticketsdnepr/" target="_blank">Facebook</a>
+                <a href="https://t.me/zahodiikvitki" target="_blank">Telegram</a>
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Театральні квитки. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
