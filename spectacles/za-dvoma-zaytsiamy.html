@@ -1,18 +1,4 @@
 <!DOCTYPE html>
-        seatEl.className = 'seat';
-        seatEl.textContent = seat.seat;
-        seatEl.style.left = `${seat.x}px`;
-        seatEl.style.top = `${seat.y}px`;
-        seatEl.style.backgroundColor = priceColors[seat.price];
-        seatEl.dataset.index = index;
-        seatEl.addEventListener('click', () => toggleSeat(index, seatEl));
-        hall.appendChild(seatEl);
-      });
-    }
-
-    function toggleSeat(index, element) {
-      const seat = quotaSeats[index];
-      const key = `${seat.row}-${seat.seat}`;
       const existing = selectedSeats.find(s => s.key === key);
       if (existing) {
         selectedSeats = selectedSeats.filter(s => s.key !== key);
